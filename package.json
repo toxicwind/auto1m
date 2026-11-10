@@ -1,0 +1,23 @@
+{
+  "name": "auto1m",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Virtual 1M-context composite route for oversized corpora",
+  "scripts": {
+    "dev": "bun --hot run auto1m.py",
+    "test": "bun test",
+    "typecheck": "tsgo --noEmit -p tsconfig.json",
+    "lint": "biome check .",
+    "fmt": "biome format --write .",
+    "build": "bun build auto1m.py"
+  },
+  "bin": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-types": "latest",
+    "typescript": "^5.0.0",
+    "@biomejs/biome": "^1.9.4"
+  },
+  "type": "module",
+  "license": "MIT"
+}
